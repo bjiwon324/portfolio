@@ -1,0 +1,31 @@
+.skills-field {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.title {
+  @include text-style(6, 600, #8f8f8f);
+  opacity: 0.4;
+}
+
+.skill-list {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-tag {
+  @include text-style(1.6, 400, #ddd);
+  background-color: #a1a1a120;
+  // opacity: 0.4;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px;
+
+  //transition: all 0.3s ease-in-out;
+}
+
+.skill-tag:hover {
+  color: #34ec78;
+  text-shadow: 2px 2px 4px rgba(#36e878, 0.5);
+}

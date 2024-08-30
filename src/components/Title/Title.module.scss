@@ -1,0 +1,59 @@
+$target: #fff;
+
+.wrapper {
+  position: relative;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  height: 80px;
+  white-space: nowrap;
+  max-width: 1200px;
+  text-transform: uppercase;
+  @include text-style(14, 900);
+}
+
+.focus {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  letter-spacing: 2px;
+  filter: blur(3px);
+  opacity: 0.6;
+}
+
+.mask {
+  position: absolute;
+  left: -7px;
+  top: -57px;
+  justify-content: center;
+  width: 170px;
+  letter-spacing: 2px;
+  clip: rect(0px, 160px, 170px, 0px);
+  background: linear-gradient($target, $target 0) no-repeat, linear-gradient(to right, $target, $target 0) no-repeat,
+    linear-gradient(to right, $target, $target 0) bottom left no-repeat,
+    linear-gradient(to right, $target, $target 0) bottom left no-repeat,
+    linear-gradient($target, $target 0) bottom right no-repeat,
+    linear-gradient($target, $target 0) bottom right no-repeat, linear-gradient($target, $target 0) top right no-repeat,
+    linear-gradient($target, $target 0) top right no-repeat;
+  background-size: 33px 8px, 8px 33px, 9px 53px, 36px 31px, 49px 31px, 19px 58px, 49px 8px, 19px 33px, 29px 64px;
+  padding: 3px;
+  transform: translateX(0);
+  animation: mask 5s ease infinite alternate;
+}
+
+.text {
+  transform: translateX(0);
+  animation: text 5s ease infinite alternate;
+}
+
+@keyframes mask {
+  to {
+    transform: translateX(750px);
+  }
+}
+
+@keyframes text {
+  to {
+    transform: translateX(-750px);
+  }
+}

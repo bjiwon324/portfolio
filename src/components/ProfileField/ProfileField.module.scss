@@ -1,0 +1,57 @@
+.profile {
+  display: flex;
+  flex-direction: row-reverse;
+
+  gap: 4rem;
+  font-size: 2rem;
+  max-width: 1000px;
+  justify-content: space-between;
+  margin: 5rem auto;
+
+  & .smallTitle {
+    @include text-style(3, 600);
+  }
+
+  & .key {
+    @include text-style(2, 600, #dadada);
+  }
+}
+
+.title {
+  @include text-style(6, 600, #8f8f8f);
+  opacity: 0.4;
+}
+
+.text-field {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+.text {
+  @include text-style(1.8, 400, #dadada);
+}
+
+.link {
+  @include text-style(1.8, 400, #dadada);
+
+  transition: all 0.5s ease-in-out;
+}
+
+.github {
+  font-size: 2.4rem;
+}
+
+.link:hover {
+  color: #34ec78;
+  text-shadow: 2px 2px 4px rgba(#36e878, 0.5);
+}
+
+.img {
+  flex-shrink: 0;
+  > img {
+    border-radius: 3rem;
+    overflow: hidden;
+  }
+}

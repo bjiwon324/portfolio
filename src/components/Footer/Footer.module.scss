@@ -1,0 +1,40 @@
+.footer {
+  background-color: #1d1d1d;
+  // position: sticky;
+  // bottom: 0;
+  height: 15rem;
+  width: 100%;
+  margin-top: 8rem;
+  color: #d1d5db;
+}
+
+.footer__section {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  max-width: $tablet-breakpoint;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.footer__title {
+  @include text-style(6, 600, #8f8f8f);
+  opacity: 0.4;
+}
+
+.footer__contact {
+  h4 {
+    @include text-style(2, 500);
+  }
+
+  p,
+  a {
+    @include text-style(1.6, 400);
+    transition: all 0.3s ease-in-out;
+  }
+
+  a:hover {
+    color: #34ec78;
+    text-shadow: 2px 2px 4px rgba(#36e878, 0.5);
+  }
+}
