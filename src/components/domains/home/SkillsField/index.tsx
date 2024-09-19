@@ -1,3 +1,4 @@
+import Skill from "./Skill";
 import styles from "./SkillsField.module.scss";
 import classNames from "classnames/bind";
 
@@ -7,7 +8,6 @@ const SKILLS = [
   "Typescript",
   "Next.js",
   "Sass(SCSS)",
-  "classNames",
   "TanStack Query",
   "axios",
   "React Hook Form",
@@ -20,10 +20,6 @@ const SKILLS = [
   "emoji-picker-react",
   "styled-components",
   "Tailwind",
-  "Zustand",
-  "Supabase",
-  "Firebase",
-  "Figma",
 ];
 const SkillsField = () => {
   return (
@@ -31,8 +27,8 @@ const SkillsField = () => {
       <h2 className={cx("title")}>Skills</h2>
       <ul className={cx("skill-list")}>
         {SKILLS.map((skill, index) => (
-          <li className={cx("skill-tag")} key={index}>
-            <button> {skill}</button>
+          <li key={index}>
+            <Skill skill={skill} />
           </li>
         ))}
       </ul>

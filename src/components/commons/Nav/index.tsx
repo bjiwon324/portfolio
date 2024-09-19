@@ -7,7 +7,7 @@ const cx = classNames.bind(styles);
 
 const navList = ["profile", "skills", "project", "contact"];
 
-const Nav = () => {
+const Nav = ({ isHome = true }) => {
   return (
     <nav className={cx("nav")}>
       <div className={cx("nav__container")}>
@@ -16,11 +16,17 @@ const Nav = () => {
           <span className={cx("nav__arrow")}> &#10140;</span>
         </Link>
         <ul className={cx("nav__list")}>
-          {navList.map((item, index) => (
-            <li key={index} className={cx("nav__item")}>
-              <a href={`#${item}`}>{item}</a>
-            </li>
-          ))}
+          {isHome ? (
+            navList.map((item, index) => (
+              <li key={index} className={cx("nav__item")}>
+                <a href={`#${item}`}>{item}</a>
+              </li>
+            ))
+          ) : (
+            <Link className={cx("nav__item")} href={"/"}>
+              home
+            </Link>
+          )}
         </ul>
       </div>
     </nav>

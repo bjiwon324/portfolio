@@ -1,9 +1,9 @@
-import Footer from "@/components/Footer";
-import Nav from "@/components/Nav";
-import ProfileField from "@/components/ProfileField";
-import ProjectField from "@/components/ProjectField";
-import SkillsField from "@/components/SkillsField";
-import Title from "@/components/Title";
+import Footer from "@/components/commons/Footer";
+import Nav from "@/components/commons/Nav";
+import ProfileField from "@/components/domains/home/ProfileField";
+import ProjectField from "@/components/domains/home/ProjectField";
+import SkillsField from "@/components/domains/home/SkillsField";
+import Title from "@/components/domains/home/Title";
 import styles from "@/styles/Home.module.scss";
 import classNames from "classnames/bind";
 import { useEffect, useRef, useState } from "react";

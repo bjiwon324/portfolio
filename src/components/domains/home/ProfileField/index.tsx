@@ -50,7 +50,14 @@ const ProfileField = () => {
   return (
     <section ref={titleRef} id="profile" className={cx("profile")}>
       <div className={cx("img")}>
-        <Image src={`/profile.png`} className={""} width={400} height={400} alt="프로필 사진" />
+        <Image
+          src={`/profile.jpg`}
+          className={""}
+          width={400}
+          height={450}
+          style={{ objectFit: "cover" }}
+          alt="프로필 사진"
+        />
       </div>
       <article className={cx("text-field")}>
         <h3 className={cx("smallTitle")}>Info</h3>
