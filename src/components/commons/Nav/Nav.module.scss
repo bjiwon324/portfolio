@@ -24,11 +24,12 @@
 .nav__link {
   position: relative;
   transition: all 0.3s ease-in-out;
+  padding: 1rem;
 }
 
 .nav__arrow {
   position: absolute;
-  left: 6.4rem;
+  left: 7.4rem;
   transition: transform 150ms;
 }
 

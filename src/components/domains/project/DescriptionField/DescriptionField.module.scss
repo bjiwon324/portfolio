@@ -1,0 +1,86 @@
+.wrapper {
+  @include flexbox();
+  margin: 12rem auto;
+  max-width: 1200px;
+
+  &-trouble {
+    flex-direction: column;
+    margin: 12rem auto;
+    max-width: 1000px;
+  }
+}
+
+.title {
+  @include text-style(5, 700, #34ec78);
+  margin: 3rem auto 2rem;
+  text-shadow: 2px 2px 4px rgba(#36e878, 0.5);
+}
+
+.description {
+  @include text-style(2, 500, gray);
+  margin: 1rem auto;
+}
+.period {
+  @include text-style(1.8, 400, rgb(197, 197, 197));
+}
+.little-title {
+  @include text-style(3, 700, #fff);
+  margin: 2rem auto 1rem;
+  text-shadow: 2px 2px 4px rgba(#fff, 0.5);
+
+  &.trouble {
+    display: block;
+    text-align: center;
+  }
+}
+.team {
+  @include text-style(2, 400);
+}
+
+.skills {
+  margin: 3rem auto;
+  @include text-style(2, 400);
+}
+.address {
+  margin: 2rem auto;
+  display: block;
+  @include text-style(2, 400, gray);
+  > span {
+    @include text-style(2, 600, #fff);
+    &:hover {
+      color: #34ec78;
+    }
+  }
+}
+.trouble-content {
+  background-color: #7878786f;
+  margin: 5rem auto;
+  padding: 4rem;
+  border-radius: 1rem;
+}
+.bg-logo {
+  object-fit: fill;
+}
+.trouble-title {
+  @include text-style(2.5, 600);
+}
+
+.trouble-section {
+  @include text-style(2, 500, #34ec78);
+  margin: 4rem auto 2rem;
+}
+.trouble-article {
+  @include text-style(2, 400, #acffa1);
+  margin: 2rem auto 1rem;
+}
+.trouble-text {
+  @include text-style(1.8);
+  overflow-wrap: break-word;
+  word-break: keep-all;
+  &-more {
+    @include text-style(1.6);
+
+    margin: 2rem 1rem;
+    color: #d6d6d6;
+  }
+}
