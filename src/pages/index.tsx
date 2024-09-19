@@ -1,5 +1,6 @@
 import Footer from "@/components/commons/Footer";
 import Nav from "@/components/commons/Nav";
+import FeedbackField from "@/components/domains/home/FeedBackField";
 import ProfileField from "@/components/domains/home/ProfileField";
 import ProjectField from "@/components/domains/home/ProjectField";
 import SkillsField from "@/components/domains/home/SkillsField";
@@ -52,6 +53,7 @@ export default function Home() {
       <ProfileField />
       <SkillsField />
       <ProjectField />
+      <FeedbackField />
       <Footer />
     </>
   );

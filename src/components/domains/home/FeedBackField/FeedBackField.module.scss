@@ -1,0 +1,18 @@
+.wrapper {
+  max-width: 1000px;
+  margin: 5rem auto;
+
+  > h3 {
+    @include text-style(6, 600, #8f8f8f);
+    opacity: 0.4;
+    margin: 4rem auto;
+  }
+}
+
+.img-list {
+  @include column-flexbox();
+  gap: 2rem;
+  > img {
+    border-radius: 1rem;
+  }
+}
