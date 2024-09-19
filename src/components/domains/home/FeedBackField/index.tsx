@@ -7,7 +7,7 @@ const cx = classNames.bind(styles);
 export default function FeedbackField() {
   return (
     <section className={cx("wrapper")} id="feedback">
-      <h3>feedback</h3>
+      <h3>Feedback</h3>
       <article className={cx("img-list")}>
         <Image src={"/part1-review.png"} alt="팀원 피드백" width={1000} height={400} objectFit="fill" />
         <Image src={"/part2-review.png"} alt="팀원 피드백" width={1000} height={350} objectFit="fill" />
