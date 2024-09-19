@@ -5,7 +5,9 @@ import classNames from "classnames/bind";
 
 const cx = classNames.bind(styles);
 
+
 const navList = ["profile", "skills", "project", "feedback", "contact"];
+
 
 const Nav = ({ isHome = true }) => {
   return (
