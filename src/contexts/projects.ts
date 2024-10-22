@@ -1,16 +1,17 @@
 export const projects: Project[] = [
   {
     name: "binder-binFinder",
-    team: "기획자 1 명, 디자이너 1명, 프론트 엔드 2명, 백엔드 2명",
+    team: "기획자 1 명, 디자이너 1명, 프론트엔드 2명, 백엔드 2명",
     period: "2024.09 - 진행 중",
     address: "https://www.bin-finder.net/",
     gitrepo: "https://github.com/binder-binFinder/binder-front-end",
     skills: ["Typescript", "Next.js", "Sass(SCSS)", "Jotai", "TanStack Query", "axios", "react-hook-form"],
-    description: "주변 공공 쓰레기통을 찾아드립니다. 초기 기획부터 팀원들과 같이 작업했습니다.",
+    description:
+      "주변 공공 쓰레기통을 찾아주는 사이트입니다. 초기 기획부터 서비스 홍보까지 팀원들과 같이 작업했습니다.",
     logo: "/icon-binder-logo.svg",
     troubleshooting: [
       {
-        title: "아직 프로젝트 진행 단계입니다.",
+        title: "",
         problemSituation: "",
         process: [],
         result: [],

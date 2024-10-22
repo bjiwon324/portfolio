@@ -16,6 +16,7 @@
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: auto auto;
 }
 .skills {
   @include text-style(4, 600);
@@ -29,6 +30,7 @@
   border-radius: 1rem;
   background-color: #313131;
   padding: 1rem;
+  grid-column: 1 / -1;
   @include text-style(2, 500, #34ec78);
   transition: transform 0.3s ease, text-shadow 0.3s ease;
 
