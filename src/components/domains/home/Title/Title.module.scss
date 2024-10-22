@@ -24,18 +24,18 @@ $target: #fff;
 .mask {
   position: absolute;
   left: -7px;
-  top: -57px;
+  top: -65px;
   justify-content: center;
   width: 170px;
   letter-spacing: 2px;
-  clip: rect(0px, 160px, 170px, 0px);
+  clip: rect(20px, 160px, 180px, 0px);
   background: linear-gradient($target, $target 0) no-repeat, linear-gradient(to right, $target, $target 0) no-repeat,
     linear-gradient(to right, $target, $target 0) bottom left no-repeat,
     linear-gradient(to right, $target, $target 0) bottom left no-repeat,
     linear-gradient($target, $target 0) bottom right no-repeat,
     linear-gradient($target, $target 0) bottom right no-repeat, linear-gradient($target, $target 0) top right no-repeat,
     linear-gradient($target, $target 0) top right no-repeat;
-  background-size: 33px 8px, 8px 33px, 9px 53px, 36px 31px, 49px 31px, 19px 58px, 49px 8px, 19px 33px, 29px 64px;
+  background-size: 33px 28px, 8px 53px, 33px 41px, 8px 64px, 18px 64px, 43px 41px, 43px 28px, 18px 53px, 0px 0px;
   padding: 3px;
   transform: translateX(0);
   animation: mask 5s ease infinite alternate;

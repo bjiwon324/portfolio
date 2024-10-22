@@ -6,7 +6,7 @@
 .title {
   @include text-style(6, 600, #8f8f8f);
   opacity: 0.4;
-  text-align: end;
+  text-align: start;
 }
 
 .card-list {
